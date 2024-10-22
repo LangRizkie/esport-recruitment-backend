@@ -1,0 +1,45 @@
+{
+	"name": "esport-recruitment-backend",
+	"version": "1.0.0",
+	"main": "index.ts",
+	"scripts": {
+		"dev": "nodemon -e ts,js --exec ts-node -r tsconfig-paths/register ./app/index.ts",
+		"start": "node dist/index.js",
+		"build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+		"prettier": "pnpm exec prettier . --write --ignore-unknown",
+		"commitlint": "commitlint --edit",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"@supabase/supabase-js": "^2.45.6",
+		"dotenv": "^16.4.5",
+		"express": "^4.21.1"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.5.0",
+		"@commitlint/config-conventional": "^19.5.0",
+		"@eslint/js": "^9.13.0",
+		"@types/express": "^5.0.0",
+		"@types/node": "^22.7.7",
+		"@typescript-eslint/eslint-plugin": "^8.10.0",
+		"@typescript-eslint/parser": "^8.10.0",
+		"concurrently": "^9.0.1",
+		"eslint": "^9.13.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prefer-arrow-functions": "^3.4.1",
+		"eslint-plugin-prettier": "^5.2.1",
+		"eslint-plugin-simple-import-sort": "^12.1.1",
+		"eslint-plugin-unused-imports": "^4.1.4",
+		"globals": "^15.11.0",
+		"husky": "^9.1.6",
+		"lint-staged": "^15.2.10",
+		"nodemon": "^3.1.7",
+		"prettier": "^3.3.3",
+		"prettier-eslint": "^16.3.0",
+		"ts-node": "^10.9.2",
+		"tsc-alias": "^1.8.10",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.6.3",
+		"typescript-eslint": "^8.10.0"
+	}
+}

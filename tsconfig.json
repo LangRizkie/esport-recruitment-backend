@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"target": "es2016",
+		"module": "commonjs",
+		"outDir": "./dist",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"skipLibCheck": true,
+		"paths": {
+			"@/*": ["app/*"],
+			"@routes/*": ["app/routes/*"],
+			"@utilities/*": ["app/utilities/*"],
+			"@controller/*": ["app/controller/*"]
+		}
+	},
+	"ts-node": {
+		"require": ["tsconfig-paths/register"]
+	},
+	"include": ["app/**/*.ts", "commitlint.config.js"],
+	"exclude": ["node_modules", "dist"]
+}
